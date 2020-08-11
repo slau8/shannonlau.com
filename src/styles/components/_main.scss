@@ -1,0 +1,95 @@
+$sans-serif: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+
+$monospace: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+
+// Colors
+
+// Config -----------------------------------
+$syntax-hue: 220;
+$syntax-saturation: 13%;
+$syntax-brightness: 18%;
+
+// Monochrome -----------------------------------
+$mono-1: hsl($syntax-hue, 14%, 71%); // default text
+$mono-2: hsl($syntax-hue, 9%, 55%);
+$mono-3: hsl($syntax-hue, 10%, 40%);
+
+// Colors -----------------------------------
+$red: hsl(355, 65%, 65%);
+$orange: hsl(29, 54%, 61%);
+$yellow: hsl(39, 67%, 69%);
+$green: hsl(95, 38%, 62%);
+$cyan: hsl(187, 47%, 55%);
+$blue: hsl(207, 82%, 66%);
+$purple: hsl(286, 60%, 67%);
+
+// Base colors -----------------------------------
+$syntax-fg: $mono-1;
+$syntax-bg: hsl($syntax-hue, $syntax-saturation, $syntax-brightness);
+$syntax-bg-lighter: darken($syntax-fg, 26%);
+// $syntax-guide: fade($syntax-fg, 15%);
+// $syntax-accent: hsl($syntax-hue, 100%, 66%);
+
+@mixin full-width-height {
+  width: 100%;
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  // @include full-width-height;
+}
+
+body {
+  // @include full-width-height;
+  margin: 0;
+  font-family: $sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: $syntax-bg;
+  color: $syntax-fg;
+}
+
+code {
+  font-family: $monospace;
+}
+
+svg {
+  height: 18px;
+  width: 18px;
+  fill: $syntax-bg-lighter;
+
+  &:hover {
+    fill: $mono-2;
+  }
+}
+
+.icon {
+  padding: 15px;
+}
+
+.accent {
+  color: $yellow;
+}
+
+.underline-link {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 0.05em solid;
+  // border-bottom-color: $syntax-bg-lighter;
+
+  &:hover {
+    color: $red;
+    border-bottom-color: $red;
+  }
+}
+
+::selection {
+  background-color: rgba($syntax-bg-lighter, 0.2);
+}

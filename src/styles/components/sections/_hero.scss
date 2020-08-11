@@ -1,0 +1,23 @@
+.hero {
+  padding: 140px;
+  padding: 250px 140px;
+  height: 100vh;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-text {
+  font: {
+    weight: 300;
+  }
+  max-width: 1000px;
+}
+
+.name {
+  font: {
+    weight: 500;
+    // family: $monospace;
+  }
+  color: $blue;
+}
