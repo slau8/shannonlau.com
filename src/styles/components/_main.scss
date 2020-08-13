@@ -1,3 +1,25 @@
+@mixin phone {
+  @media only screen and (max-width: 479px) {
+    @content;
+  }
+}
+@mixin phablet {
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media only screen and (min-width: 992px) {
+    @content;
+  }
+}
+
+// Fonts
 $sans-serif: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
   'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 
@@ -24,17 +46,22 @@ $cyan: hsl(187, 47%, 55%);
 $blue: hsl(207, 82%, 66%);
 $purple: hsl(286, 60%, 67%);
 
+$colors: (
+  'red': $red,
+  'orange': $orange,
+  'yellow': $yellow,
+  'green': $green,
+  'cyan': $cyan,
+  'blue': $blue,
+  'purple': $purple,
+);
+
 // Base colors -----------------------------------
 $syntax-fg: $mono-1;
 $syntax-bg: hsl($syntax-hue, $syntax-saturation, $syntax-brightness);
 $syntax-bg-lighter: darken($syntax-fg, 26%);
 // $syntax-guide: fade($syntax-fg, 15%);
 // $syntax-accent: hsl($syntax-hue, 100%, 66%);
-
-@mixin full-width-height {
-  width: 100%;
-  height: 100%;
-}
 
 * {
   box-sizing: border-box;
@@ -43,17 +70,28 @@ $syntax-bg-lighter: darken($syntax-fg, 26%);
 html {
   margin: 0;
   padding: 0;
-  // @include full-width-height;
 }
 
 body {
-  // @include full-width-height;
   margin: 0;
   font-family: $sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   background-color: $syntax-bg;
   color: $syntax-fg;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @include phone {
+    padding: 0px 60px;
+  }
+  @include phablet {
+    padding: 0px 100px;
+  }
+  @include tablet {
+    padding: 0px 125px;
+  }
+  @include desktop {
+    padding: 0px 140px;
+  }
 }
 
 code {
@@ -70,26 +108,91 @@ svg {
   }
 }
 
+.logo {
+  height: 75px;
+  width: 75px;
+}
+
 .icon {
   padding: 15px;
+  &:focus {
+    outline: 1;
+  }
 }
 
 .accent {
   color: $yellow;
 }
 
-.underline-link {
-  color: inherit;
-  text-decoration: none;
-  border-bottom: 0.05em solid;
-  // border-bottom-color: $syntax-bg-lighter;
-
-  &:hover {
-    color: $red;
-    border-bottom-color: $red;
+@each $name, $hex in $colors {
+  .link-#{$name} {
+    color: $hex;
+    display: inline-block;
+    text-decoration: none;
+    &:hover,
+    &:focus,
+    &:active {
+      color: $hex;
+      outline: 0;
+      &:after {
+        width: 100%;
+      }
+    }
+    &:after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 1px;
+      position: relative;
+      background-color: $hex;
+      transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    }
   }
 }
 
+@each $name, $hex in $colors {
+  .accent-#{$name} {
+    color: $hex;
+  }
+}
+
+// Highlighting
 ::selection {
   background-color: rgba($syntax-bg-lighter, 0.2);
+}
+
+.section {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-gap: 20px;
+  padding: 70px 0px;
+
+  // visibility: visible;
+  // opacity: 1;
+  // transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  // transition: opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s,
+  //   transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s;
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.6s cubic-bezier(0.694, 0, 0.335, 1) 0s;
+}
+
+.section-title {
+  text-transform: uppercase;
+  font-weight: 600;
+  @include desktop {
+    width: 200px;
+    text-align: right;
+  }
+}
+
+.section-content {
+  font-weight: 350;
+  font-size: 1em;
+  line-height: 1.5;
+  width: 100%;
+  p {
+    margin-top: 0;
+    margin-bottom: 25px;
+  }
 }

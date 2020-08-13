@@ -19,10 +19,10 @@ const socialMedia = [
     name: 'Instagram',
     url: 'https://www.instagram.com/slau.ghtered',
   },
-  {
-    name: 'YouTube',
-    url: 'https://www.youtube.com/channel/UCAwe4_4fOMw1C4KGIWET8zg/',
-  },
+  // {
+  //   name: 'YouTube',
+  //   url: 'https://www.youtube.com/channel/UCAwe4_4fOMw1C4KGIWET8zg/',
+  // },
 ];
 
 class Icons extends Component {
