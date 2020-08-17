@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Helmet } from 'react-helmet';
+import icon from './../assets/shannon-lau.svg';
 
 class Head extends Component {
   render() {
@@ -12,13 +13,13 @@ class Head extends Component {
           name='description'
           content="I'm Shannon Lau, a design-driven software engineer and creator focused on building human-centered experiences. NYC-bred."
         />
-        <link rel='apple-touch-icon' href='%PUBLIC_URL%/shaka-512.png' />
         <meta
           name='apple-mobile-web-app-status-bar-style'
           content='black-translucent'
         />
         <title>Shannon Lau</title>
-        <link rel='icon' href='./assets/shannon-lau.svg' />
+        <link rel='icon' href={icon} />
+        <link rel='apple-touch-icon' href={icon} />
       </Helmet>
     );
   }
