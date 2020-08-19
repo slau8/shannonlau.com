@@ -8,15 +8,14 @@ import Photo from './components/sections/photo';
 import Video from './components/sections/video';
 import Design from './components/sections/design';
 import Footer from './components/sections/footer';
-// import Scripts from './utils/main';
-import svg from './assets/shannon-lau.svg';
+import Fade from 'react-reveal/Fade';
 
 function App() {
   return (
     <React.Fragment>
       <Head />
       <Hero />
-      {/* <About /> */}
+      <About />
       {/*<Experience />
       <Projects />
       <Photo />
