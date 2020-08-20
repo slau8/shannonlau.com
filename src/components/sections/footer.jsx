@@ -4,7 +4,7 @@ class Footer extends Component {
   state = {};
   render() {
     return (
-      <div class='footer'>
+      <div className='footer'>
         <p align='center'>Designed and Built by Shannon Lau, 2020.</p>
       </div>
     );

@@ -20,12 +20,12 @@ class Role extends Component {
           </a>{' '}
           <span className='accent-gray'>&#8212; {title}</span>
         </h1>
-        <h2>
+        <h2 className='monospace'>
           {start} &#8212; {end} // {city}, {state}
         </h2>
         <ul>
-          {details.map((detail) => (
-            <li>{detail}</li>
+          {details.map((detail, index) => (
+            <li key={index}>{detail}</li>
           ))}
         </ul>
       </div>

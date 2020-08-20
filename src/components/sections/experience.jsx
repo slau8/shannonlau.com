@@ -4,6 +4,7 @@ import Role from './../role';
 
 class Experience extends Component {
   state = {
+    active: 0,
     experiences: [
       {
         company: 'Comau',
@@ -17,6 +18,7 @@ class Experience extends Component {
           'Architect and implement a live bin-packing heuristic in C++ that identifies items’ optimal placement locations, maximizing bin capacity and speeding up company automation.',
           'Create a command-line interface for the robotic system that enables users to visualize item placements and possible future placements step-by-step, powered by Processing.',
         ],
+        color: 'blue',
       },
       {
         company: 'Capital One',
@@ -31,6 +33,7 @@ class Experience extends Component {
           'Built and integrated experience-elevating features into the audio player platform with AngularJS and D3.js, including: dual-speaker waveform visualizer to distinguish the current speaker and enhance audio-scrubbing, call captioning to complement the audio, and issue-tagging to flag any timestamp for future reference.',
           'Interfaced with designers, product managers, and other developers in Agile sprints to ensure functional and thoughtful user experiences across our voice-based applications.',
         ],
+        color: 'green',
       },
       {
         company: 'University of Michigan, EECS',
@@ -44,15 +47,36 @@ class Experience extends Component {
           'Help professors teach 900+ students by instructing lab class, answering online questions, writing and evaluating exams, and holding office hours to guide students one-on-one.',
           'Deepen students’ understanding of best coding practices, debugging tools, and core concepts, including stacks, queues, trees, dynamic programming, and hash tables.',
         ],
+        color: 'yellow',
       },
     ],
   };
   render() {
+    const { experiences, active } = this.state;
     return (
       <Section title='experience'>
-        {this.state.experiences.map((experience, index) => (
-          <Role experience={experience} key={index} />
-        ))}
+        <p
+          className='monospace'
+          style={{ textTransform: 'uppercase', fontSize: '0.8em' }}>
+          {experiences.map((experience, index) => (
+            <React.Fragment key={index}>
+              <a
+                className={
+                  active === index
+                    ? `accent-${experience.color} experience.company `
+                    : `link-text experience.company`
+                }
+                onClick={() => this.setState({ active: index })}>
+                {experience.company}
+              </a>
+              {index < experiences.length - 1 && <span>&nbsp;/&nbsp;</span>}
+            </React.Fragment>
+          ))}
+        </p>
+        {experiences.map(
+          (experience, index) =>
+            active === index && <Role experience={experience} key={index} />
+        )}
       </Section>
     );
   }

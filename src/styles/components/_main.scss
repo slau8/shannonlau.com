@@ -63,6 +63,7 @@ $colors: (
   'blue': $blue,
   'purple': $purple,
   'gray': $syntax-bg-lighter,
+  'text': $syntax-fg,
 );
 
 * {
@@ -83,10 +84,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 
   @include phone {
-    padding: 0px 60px;
+    padding: 0px 40px;
   }
   @include phablet {
-    padding: 0px 100px;
+    padding: 0px 80px;
   }
   @include tablet {
     padding: 0px 125px;
@@ -97,6 +98,10 @@ body {
 }
 
 code {
+  font-family: $monospace;
+}
+
+.monospace {
   font-family: $monospace;
 }
 
