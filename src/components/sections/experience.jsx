@@ -63,7 +63,7 @@ class Experience extends Component {
               <a
                 className={
                   active === index
-                    ? `accent-${experience.color} experience.company `
+                    ? `link-${experience.color} experience.company `
                     : `link-text experience.company`
                 }
                 onClick={() => this.setState({ active: index })}>
