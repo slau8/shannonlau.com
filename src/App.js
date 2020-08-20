@@ -8,7 +8,6 @@ import Photo from './components/sections/photo';
 import Video from './components/sections/video';
 import Design from './components/sections/design';
 import Footer from './components/sections/footer';
-import Fade from 'react-reveal/Fade';
 
 function App() {
   return (
@@ -16,12 +15,12 @@ function App() {
       <Head />
       <Hero />
       <About />
-      {/*<Experience />
-      <Projects />
-      <Photo />
-      <Video />
-      <Design />
-      <Footer /> */}
+      <Experience />
+      {/* <Projects /> */}
+      {/* <Photo /> */}
+      {/* <Video /> */}
+      {/* <Design /> */}
+      <Footer />
     </React.Fragment>
   );
 }

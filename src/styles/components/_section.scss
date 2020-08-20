@@ -1,0 +1,62 @@
+.section {
+  @mixin tablet-desktop {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+  }
+
+  @include tablet {
+    @include tablet-desktop;
+    grid-gap: 70px;
+  }
+  @include desktop {
+    @include tablet-desktop;
+    grid-gap: 100px;
+  }
+
+  padding: 70px 0px;
+}
+
+.section-title {
+  text-transform: uppercase;
+  color: $syntax-accent;
+  font: {
+    size: 1.1em;
+    weight: 500;
+  }
+
+  @mixin phone-phablet {
+    padding: 25px 0px;
+  }
+
+  @mixin tablet-desktop {
+    text-align: right;
+  }
+
+  @include phone {
+    @include phone-phablet;
+  }
+
+  @include phablet {
+    @include phone-phablet;
+  }
+
+  @include tablet {
+    @include tablet-desktop;
+  }
+
+  @include desktop {
+    @include tablet-desktop;
+  }
+}
+
+.section-content {
+  font-weight: 350;
+  font-size: 1em;
+  line-height: 1.5;
+  width: 100%;
+
+  p {
+    margin-top: 0;
+    margin-bottom: 25px;
+  }
+}

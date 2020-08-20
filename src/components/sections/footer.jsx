@@ -3,7 +3,11 @@ import React, { Component } from 'react';
 class Footer extends Component {
   state = {};
   render() {
-    return <h1>Footer</h1>;
+    return (
+      <div class='footer'>
+        <p align='center'>Designed and Built by Shannon Lau, 2020.</p>
+      </div>
+    );
   }
 }
 

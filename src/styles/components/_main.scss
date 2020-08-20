@@ -46,6 +46,14 @@ $cyan: hsl(187, 47%, 55%);
 $blue: hsl(207, 82%, 66%);
 $purple: hsl(286, 60%, 67%);
 
+// Base colors -----------------------------------
+$syntax-fg: $mono-1;
+$syntax-bg: hsl($syntax-hue, $syntax-saturation, $syntax-brightness);
+$syntax-bg-lighter: darken($syntax-fg, 26%);
+$syntax-accent: rgb(127, 203, 254);
+// $syntax-guide: fade($syntax-fg, 15%);
+// $syntax-accent: hsl($syntax-hue, 100%, 66%);
+
 $colors: (
   'red': $red,
   'orange': $orange,
@@ -54,15 +62,8 @@ $colors: (
   'cyan': $cyan,
   'blue': $blue,
   'purple': $purple,
+  'gray': $syntax-bg-lighter,
 );
-
-// Base colors -----------------------------------
-$syntax-fg: $mono-1;
-$syntax-bg: hsl($syntax-hue, $syntax-saturation, $syntax-brightness);
-$syntax-bg-lighter: darken($syntax-fg, 26%);
-$syntax-accent: rgb(127, 203, 254);
-// $syntax-guide: fade($syntax-fg, 15%);
-// $syntax-accent: hsl($syntax-hue, 100%, 66%);
 
 * {
   box-sizing: border-box;
@@ -153,76 +154,7 @@ svg {
   }
 }
 
-@each $name, $hex in $colors {
-  .accent-#{$name} {
-    color: $hex;
-  }
-}
-
 // Highlighting
 ::selection {
   background-color: rgba($syntax-bg-lighter, 0.2);
-}
-
-.section {
-  @mixin tablet-desktop {
-    display: grid;
-    grid-template-columns: 1fr 4fr;
-  }
-
-  @include tablet {
-    @include tablet-desktop;
-    grid-gap: 70px;
-  }
-  @include desktop {
-    @include tablet-desktop;
-    grid-gap: 100px;
-  }
-
-  padding: 70px 0px;
-}
-
-.section-title {
-  text-transform: uppercase;
-  color: $syntax-accent;
-  font: {
-    size: 1.1em;
-    weight: 500;
-  }
-
-  @mixin phone-phablet {
-    padding: 25px 0px;
-  }
-
-  @mixin tablet-desktop {
-    text-align: right;
-  }
-
-  @include phone {
-    @include phone-phablet;
-  }
-
-  @include phablet {
-    @include phone-phablet;
-  }
-
-  @include tablet {
-    @include tablet-desktop;
-  }
-
-  @include desktop {
-    @include tablet-desktop;
-  }
-}
-
-.section-content {
-  font-weight: 350;
-  font-size: 1em;
-  line-height: 1.5;
-  width: 100%;
-
-  p {
-    margin-top: 0;
-    margin-bottom: 25px;
-  }
 }
