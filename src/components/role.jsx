@@ -15,10 +15,16 @@ class Role extends Component {
     return (
       <div className='role'>
         <h1>
-          <a href={url} target='blank' className='link-blue'>
+          <a
+            href={url}
+            target='_blank'
+            rel='noopener noreferrer'
+            className='link-blue'>
             {company}
           </a>{' '}
-          <span className='accent-gray'>&#8212; {title}</span>
+          <span className='accent-gray' style={{ fontWeight: 400 }}>
+            &#8212; {title}
+          </span>
         </h1>
         <h2 className='monospace'>
           {start} &#8212; {end} // {city}, {state}

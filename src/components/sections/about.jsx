@@ -9,14 +9,19 @@ class About extends Component {
         <p>
           Hello! I’m Shannon, a creator who loves building things that intersect
           engineering and design. Most of my knowledge comes from the{' '}
-          <a href='https://umich.edu/' className='link-blue' target='blank'>
+          <a
+            href='https://umich.edu/'
+            className='link-blue'
+            target='_blank'
+            rel='noopener noreferrer'>
             University of Michigan
           </a>{' '}
           where I'm exploring computer science and multidiscplinary design,{' '}
           <a
             href='https://en.wikipedia.org/wiki/Stuyvesant_High_School'
             className='link-green'
-            target='blank'>
+            target='_blank'
+            rel='noopener noreferrer'>
             Stuyvesant High School
           </a>
           , learning from those around me, and tons of googling. Recently, I
@@ -24,7 +29,8 @@ class About extends Component {
           <a
             href='https://www.capitalone.com/'
             className='link-yellow'
-            target='blank'>
+            target='_blank'
+            rel='noopener noreferrer'>
             Capital One
           </a>
           's voice applications as a software engineering intern.
@@ -40,7 +46,8 @@ class About extends Component {
           <a
             href='https://www.instagram.com/p/B_sb7D8lx5R/'
             className='link-red'
-            target='blank'>
+            target='_blank'
+            rel='noopener noreferrer'>
             videos
           </a>
           , and follow new apparel and footwear. As a player on Michigan

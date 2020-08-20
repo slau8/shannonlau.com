@@ -30,7 +30,12 @@ class Icons extends Component {
     return (
       <div>
         {socialMedia.map(({ url, name }, i) => (
-          <a key={i} href={url} target='blank' className='icon'>
+          <a
+            key={i}
+            href={url}
+            target='_blank'
+            rel='noopener noreferrer'
+            className='icon'>
             {this.getIcon(name)}
           </a>
         ))}

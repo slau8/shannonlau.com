@@ -105,7 +105,7 @@ code {
   font-family: $monospace;
 }
 
-svg {
+.icons-item {
   height: 18px;
   width: 18px;
   fill: $syntax-bg-lighter;
@@ -113,6 +113,12 @@ svg {
   &:hover {
     fill: $mono-2;
   }
+}
+
+.icon-scroll {
+  height: 18px;
+  width: 18px;
+  fill: $mono-2;
 }
 
 .logo {

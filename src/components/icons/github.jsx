@@ -3,6 +3,7 @@ import React from 'react';
 const IconGitHub = () => (
   <svg
     xmlns='http://www.w3.org/2000/svg'
+    className='icons-item'
     role='img'
     viewBox='0 0 438.549 438.549'>
     <title>GitHub</title>
