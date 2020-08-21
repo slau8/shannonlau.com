@@ -3,6 +3,8 @@
 
   h1 {
     margin: 0px 0px 3px 0px;
+    line-height: 1.4;
+    flex-wrap: wrap;
     font: {
       size: 1.2em;
       weight: 500;
@@ -16,5 +18,10 @@
       size: 0.8em;
       weight: 400;
     }
+  }
+
+  .title {
+    font-weight: 400;
+    display: inline-block;
   }
 }

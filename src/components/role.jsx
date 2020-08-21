@@ -22,8 +22,8 @@ class Role extends Component {
             className='link-blue'>
             {company}
           </a>{' '}
-          <span className='accent-gray' style={{ fontWeight: 400 }}>
-            &#8212; {title}
+          <span className='accent-gray'>
+            &#8212; <span className='title'>{title}</span>
           </span>
         </h1>
         <h2 className='monospace'>
