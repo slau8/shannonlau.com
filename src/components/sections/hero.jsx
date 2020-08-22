@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Icons from '../icons/icons';
-import LogoIcon from '../icons/logo';
-import IconScroll from '../icons/scroll';
+import Icons from '../../icons/icons';
+import LogoIcon from '../../icons/logo';
+import IconScroll from '../../icons/scroll';
 import Fade from 'react-reveal/Fade';
 
 class Hero extends Component {

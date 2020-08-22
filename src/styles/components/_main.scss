@@ -113,24 +113,15 @@ code {
   &:hover {
     fill: $mono-2;
   }
-}
 
-.icon-scroll {
-  height: 18px;
-  width: 18px;
-  fill: $mono-2;
+  &:focus {
+    outline: 1;
+  }
 }
 
 .logo {
   height: 75px;
   width: 75px;
-}
-
-.icon {
-  padding: 15px;
-  &:focus {
-    outline: 1;
-  }
 }
 
 @each $name, $hex in $colors {

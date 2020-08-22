@@ -55,9 +55,7 @@ class Experience extends Component {
     const { experiences, active } = this.state;
     return (
       <Section title='experience'>
-        <p
-          className='monospace'
-          style={{ textTransform: 'uppercase', fontSize: '0.8em' }}>
+        <p className='monospace experience-nav'>
           {experiences.map((experience, index) => (
             <React.Fragment key={index}>
               <a

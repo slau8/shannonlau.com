@@ -35,7 +35,7 @@ class Icons extends Component {
             href={url}
             target='_blank'
             rel='noopener noreferrer'
-            className='icon'>
+            className='icon-hero'>
             {this.getIcon(name)}
           </a>
         ))}

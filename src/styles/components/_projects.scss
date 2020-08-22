@@ -1,0 +1,13 @@
+.row {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+
+  @include phone {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  @include phablet {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
