@@ -1,5 +1,6 @@
 .hero {
   height: 100vh;
+  font-family: 'SF Pro Light';
   // Center child (hero-content) vertically
   display: flex;
   align-items: center;
@@ -48,10 +49,7 @@
 }
 
 .name {
-  font: {
-    weight: 500;
-    // family: $monospace;
-  }
+  font-weight: 600;
   color: $blue;
 }
 

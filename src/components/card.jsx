@@ -7,6 +7,7 @@ class Card extends Component {
     const {
       title,
       detail,
+      tech,
       img,
       color,
       github,
@@ -20,10 +21,17 @@ class Card extends Component {
           style={{
             backgroundImage: `url(${require('../assets/img/' + img)})`,
           }}></div>
+
         <div className='card-content'>
           <h1 className={`accent-${color}`}>{title}</h1>
+          <ul className='tags'>
+            {tech.map((d) => (
+              <li>{d}</li>
+            ))}
+          </ul>
           <p>{detail}</p>
         </div>
+
         <div className='icons'>
           {github && (
             <a href={github} target='_blank' rel='noopener noreferrer'>

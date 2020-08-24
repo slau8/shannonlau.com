@@ -15,7 +15,7 @@ class Experience extends Component {
         city: 'Ann Arbor',
         state: 'MI',
         details: [
-          'Architect and implement a live bin-packing heuristic in C++ that identifies items’ optimal placement locations, maximizing bin capacity and speeding up company automation.',
+          'Architect and implement a live bin-packing heuristic in C++ that identifies items’ optimal placement locations, maximizing capacity to 85% and speeding up company automation.',
           'Create a command-line interface for the robotic system that enables users to visualize item placements and possible future placements step-by-step, powered by Processing.',
         ],
         color: 'blue',
@@ -29,8 +29,8 @@ class Experience extends Component {
         city: 'Chicago',
         state: 'IL',
         details: [
-          'Developed an AWS Lambda with Python that processes 3,000+ customer calls each day into visualizable data for Sage, Capital One’s call assessment platform.',
-          'Built and integrated experience-elevating features into the audio player platform with AngularJS and D3.js, including: dual-speaker waveform visualizer to distinguish the current speaker and enhance audio-scrubbing, call captioning to complement the audio, and issue-tagging to flag any timestamp for future reference.',
+          'Developed an AWS Lambda with Python that transforms 3,000+ customer calls each day into visualizable data for Sage, Capital One’s call assessment platform.',
+          'Built and integrated experience-elevating features into the audio player platform with AngularJS and D3.js, including: dual-speaker waveform visualization to distinguish the current speaker and enhance audio-scrubbing, call captioning to complement the audio, and issue-tagging to flag any timestamp for future reference.',
           'Interfaced with designers, product managers, and other developers in Agile sprints to ensure functional and thoughtful user experiences across our voice-based applications.',
         ],
         color: 'green',

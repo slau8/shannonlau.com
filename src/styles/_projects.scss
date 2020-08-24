@@ -11,3 +11,13 @@
     grid-template-columns: repeat(1, 1fr);
   }
 }
+
+#see-more {
+  text-transform: uppercase;
+  text-align: center;
+  margin: 50px;
+  font: {
+    size: 0.8em;
+    family: $monospace;
+  }
+}

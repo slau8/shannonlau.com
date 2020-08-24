@@ -37,9 +37,30 @@
   }
 
   p {
-    font-weight: 350;
+    font-weight: 400;
     font-size: 0.8em;
     line-height: 1.5;
     margin: 10px 0px 20px 0px;
+  }
+
+  .tags {
+    list-style: none;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    margin: 5px 0px;
+    padding: 0px 0px 0px 2px;
+
+    text-transform: uppercase;
+    color: $mono-2;
+
+    font: {
+      size: 0.7em;
+      family: $monospace;
+    }
+
+    li {
+      margin-right: 10px;
+    }
   }
 }
