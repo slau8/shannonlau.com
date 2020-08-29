@@ -30,7 +30,7 @@ class Experience extends Component {
         state: 'IL',
         details: [
           'Developed an AWS Lambda with Python that transforms 3,000+ customer calls each day into visualizable data for Sage, Capital One’s call assessment platform.',
-          'Built and integrated experience-elevating features into the audio player platform with AngularJS and D3.js, including: dual-speaker waveform visualization to distinguish the current speaker and enhance audio-scrubbing, call captioning to complement the audio, and issue-tagging to flag any timestamp for future reference.',
+          'Built and integrated experience-elevating features into Sage’s audio player platform with AngularJS and D3.js, including: dual-speaker waveform visualization to distinguish the current speaker and to enhance audio-scrubbing, call captioning to improve audio retention, and issue-tagging to flag any timestamp for future reference.',
           'Interfaced with designers, product managers, and other developers in Agile sprints to ensure functional and thoughtful user experiences across our voice-based applications.',
         ],
         color: 'green',
