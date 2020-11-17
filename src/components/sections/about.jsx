@@ -33,7 +33,21 @@ class About extends Component {
             rel='noopener noreferrer'>
             Capital One
           </a>
-          's voice applications as a software engineering intern.
+          's voice applications as a software engineering intern. In 2021,
+          I'll be interning at{' '}
+          <a href="https://www.microsoft.com"
+            className='link-red'
+            target='_blank'
+            rel='noopener noreferrer'>
+            Microsoft
+          </a>{' '}
+          and{' '}
+          <a href="https://www.facebook.com"
+            className='link-blue'
+            target='_blank'
+            rel='noopener noreferrer'>
+            Facebook
+          </a>.
         </p>{' '}
         <p>
           I’m hyped about technology and hardware with functional design.
@@ -45,7 +59,7 @@ class About extends Component {
           When I’m not coding, I take photos, make{' '}
           <a
             href='https://www.instagram.com/p/B_sb7D8lx5R/'
-            className='link-red'
+            className='link-green'
             target='_blank'
             rel='noopener noreferrer'>
             videos
