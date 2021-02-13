@@ -82,6 +82,7 @@ body {
   font-family: $sans-serif;
   background-color: $syntax-bg;
   color: $syntax-fg;
+  scrollbar-color: $syntax-fg $syntax-bg;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
@@ -161,4 +162,23 @@ code {
 // Highlighting
 ::selection {
   background-color: rgba($syntax-bg-lighter, 0.2);
+}
+
+#site {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+::-webkit-scrollbar {
+  background-color: $syntax-bg;
+  width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  border: 1px solid $syntax-bg-lighter;
+  border-radius: 7px;
+}
+
+::-webkit-scrollbar:hover {
+  width: 10px;
 }
