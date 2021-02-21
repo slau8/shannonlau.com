@@ -11,7 +11,9 @@ class Role extends Component {
       city,
       state,
       details,
+      color
     } = this.props.experience;
+    const separator = "//";
     return (
       <div className='role'>
         <h1>
@@ -19,7 +21,7 @@ class Role extends Component {
             href={url}
             target='_blank'
             rel='noopener noreferrer'
-            className='link-blue'>
+            className={`link-${color}`}>
             {company}
           </a>{' '}
           <span className='accent-gray'>
@@ -27,7 +29,7 @@ class Role extends Component {
           </span>
         </h1>
         <h2 className='monospace'>
-          {start} &#8212; {end} // {city}, {state}
+          {start} &#8212; {end} {separator} {city}, {state}
         </h2>
         <ul>
           {details.map((detail, index) => (

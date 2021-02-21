@@ -9,7 +9,7 @@ class Projects extends Component {
         title: 'Touch Connect Four',
         detail:
           'Multi-touch pad device that optically recognizes finger contours and tracks movements as different gestures for specific Connect Four moves on the built-in app.',
-        tech: ['Python', 'OpenCV', 'Soldering', 'Laser-Cutting'],
+        tags: ['Python', 'OpenCV', 'Soldering', 'Laser-Cutting'],
         img: 'touch-connect-four.png',
         color: 'blue',
         video:
@@ -19,7 +19,7 @@ class Projects extends Component {
         title: 'UFO',
         detail:
           'High-altitude device launched 26,822 meters into the stratosphere to measure and store pressure, temperature, humidity, UV index, and GPS data for weather analysis.',
-        tech: ['C/C++', 'Arduino', 'Soldering', 'I2C', 'UART'],
+        tags: ['C/C++', 'Arduino', 'Soldering', 'I2C', 'UART'],
         img: 'ufo.png',
         color: 'green',
         link:
@@ -29,7 +29,7 @@ class Projects extends Component {
         title: 'Park Finder',
         detail:
           'Online National Parks Service kiosk and search tool to discover national parks with in-depth information on visitor centers, campgrounds, news, and educational materials.',
-        tech: ['Python', 'Flask', 'Jinja2', 'Bootstrap'],
+        tags: ['Python', 'Flask', 'Jinja2', 'Bootstrap'],
         img: 'park-finder.png',
         color: 'yellow',
         github: 'https://github.com/slau8/park-finder',
@@ -39,7 +39,7 @@ class Projects extends Component {
         title: 'Jimmy Jams',
         detail:
           'Web application to streamline Spotify song requests into various music rooms.',
-        tech: ['Python', 'Flask', 'Jinja2', 'Spotify API', 'SQL'],
+        tags: ['Python', 'Flask', 'Jinja2', 'Spotify API', 'SQL'],
         img: 'jimmy-jams.png',
         color: 'red',
         github: 'https://github.com/slau8/xx4',
@@ -51,8 +51,8 @@ class Projects extends Component {
     return (
       <Section title='projects'>
         <div className='row'>
-          {this.state.projects.map((project) => (
-            <Card project={project} />
+          {this.state.projects.map((project, index) => (
+            <Card project={project} key={index} />
           ))}
         </div>
         <p id='see-more'>

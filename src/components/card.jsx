@@ -7,7 +7,7 @@ class Card extends Component {
     const {
       title,
       detail,
-      tech,
+      tags,
       img,
       color,
       github,
@@ -25,8 +25,8 @@ class Card extends Component {
         <div className='card-content'>
           <h1 className={`accent-${color}`}>{title}</h1>
           <ul className='tags'>
-            {tech.map((d) => (
-              <li>{d}</li>
+            {tags.map((tag, index) => (
+              <li key={index}>{tag}</li>
             ))}
           </ul>
           <p>{detail}</p>

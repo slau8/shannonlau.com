@@ -53,8 +53,7 @@ class Icons extends Component {
         return <IconLinkedIn />;
       case 'YouTube':
         return <IconYouTube />;
-      // default:
-      //   return <IconExternal />;
+      default:
     }
   }
 }

@@ -58,7 +58,7 @@ class Experience extends Component {
         <p className='monospace experience-nav'>
           {experiences.map((experience, index) => (
             <React.Fragment key={index}>
-              <a
+              <span
                 className={
                   active === index
                     ? `link-${experience.color} experience.company `
@@ -66,7 +66,7 @@ class Experience extends Component {
                 }
                 onClick={() => this.setState({ active: index })}>
                 {experience.company}
-              </a>
+              </span>
               {index < experiences.length - 1 && <span>&nbsp;/&nbsp;</span>}
             </React.Fragment>
           ))}

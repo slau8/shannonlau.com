@@ -24,7 +24,7 @@ class About extends Component {
             rel='noopener noreferrer'>
             Stuyvesant High School
           </a>
-          , learning from those around me, and tons of googling. Recently, I
+          , learning from many incredible minds around me, and tons of googling. Recently, I
           built experience-elevating features for{' '}
           <a
             href='https://www.capitalone.com/'
@@ -56,7 +56,8 @@ class About extends Component {
           interfaces and complements some of these tangible products.
         </p>{' '}
         <p>
-          When I’m not coding, I take photos, make{' '}
+          When I’m not coding, I teach data structures and algorithms and
+          mentor student design teams. I take photos, make{' '}
           <a
             href='https://www.instagram.com/p/B_sb7D8lx5R/'
             className='link-green'
