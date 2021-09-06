@@ -33,21 +33,20 @@ class About extends Component {
             rel='noopener noreferrer'>
             Capital One
           </a>
-          's voice applications as a software engineering intern. In 2021,
-          I'll be interning at{' '}
+          's voice applications and{' '}
           <a href="https://www.microsoft.com"
             className='link-red'
             target='_blank'
             rel='noopener noreferrer'>
             Microsoft
-          </a>{' '}
-          and{' '}
-          <a href="https://www.facebook.com"
+          </a>'s new productivity app as a software engineering intern. Currently,
+          I'm interning with{' '}
+          <a href="https://tech.fb.com/codec-avatars-facebook-reality-labs/"
             className='link-blue'
             target='_blank'
             rel='noopener noreferrer'>
-            Facebook
-          </a>.
+            Facebook Reality Labs
+          </a> working on the Codec Avatars Project.
         </p>{' '}
         <p>
           I’m hyped about technology and hardware with functional design.
