@@ -3,16 +3,19 @@
     @content;
   }
 }
+
 @mixin phablet {
   @media only screen and (min-width: 480px) and (max-width: 767px) {
     @content;
   }
 }
+
 @mixin tablet {
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     @content;
   }
 }
+
 @mixin desktop {
   @media only screen and (min-width: 992px) {
     @content;
@@ -20,12 +23,18 @@
 }
 
 // Fonts
-$sans-serif: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
-  'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-  sans-serif;
+$sans-serif: BlinkMacSystemFont,
+'Helvetica Neue',
+sans-serif;
 
-$monospace: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-  monospace;
+$monospace: 'SF Mono',
+-apple-system,
+source-code-pro,
+Menlo,
+Monaco,
+Consolas,
+'Courier New',
+monospace;
 
 // Colors
 
@@ -56,8 +65,7 @@ $syntax-accent: rgb(127, 203, 254);
 // $syntax-guide: fade($syntax-fg, 15%);
 // $syntax-accent: hsl($syntax-hue, 100%, 66%);
 
-$colors: (
-  'red': $red,
+$colors: ('red': $red,
   'orange': $orange,
   'yellow': $yellow,
   'green': $green,
@@ -89,12 +97,15 @@ body {
   @include phone {
     padding: 0px 40px;
   }
+
   @include phablet {
     padding: 0px 80px;
   }
+
   @include tablet {
     padding: 0px 100px;
   }
+
   @include desktop {
     padding: 0px 140px;
   }
@@ -127,26 +138,31 @@ code {
   width: 75px;
 }
 
-@each $name, $hex in $colors {
+@each $name,
+$hex in $colors {
   .accent-#{$name} {
     color: $hex;
   }
 }
 
-@each $name, $hex in $colors {
+@each $name,
+$hex in $colors {
   .link-#{$name} {
     color: $hex;
     display: inline-block;
     text-decoration: none;
+
     &:hover,
     &:focus,
     &:active {
       color: $hex;
       outline: 0;
+
       &:after {
         width: 100%;
       }
     }
+
     &:after {
       content: '';
       display: block;

@@ -1,17 +1,17 @@
 @font-face {
   font-family: 'SF Pro Light';
   src: local('SF Pro Light'),
-    url('/fonts/SFProText-Light.ttf') format('truetype');
+    url('/fonts/SF-Pro/SFProText-Light.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'SF Pro';
-  src: local('SF Pro'), url('/fonts/SFProText-Regular.ttf') format('truetype');
+  src: local('SF Pro'), url('/fonts/SF-Pro/SFProText-Regular.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'SF Mono';
-  src: local('SF Mono'), url('/fonts/SFMono-Regular.ttf') format('truetype');
+  src: local('SF Mono'), url('/fonts/SF-Mono/SFMono-Regular.ttf') format('truetype');
 }
 
 @import './styles/main';

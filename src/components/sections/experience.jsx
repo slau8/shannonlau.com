@@ -11,11 +11,12 @@ class Experience extends Component {
         url: 'https://tech.fb.com/codec-avatars-facebook-reality-labs/',
         title: 'Software Engineer Intern',
         start: 'August 2021',
-        end: 'Present',
+        end: 'November 2021',
         city: 'Pittsburgh',
         state: 'PA',
         details: [
-          'Working on the Codec Avatars project with Facebook Reality Labs Research.',
+          'Optimized 3D capture to build VR telepresence for Reality Lab\'s Codec Avatars.',
+          'Implemented C++ lossy image algorithms and scripted Python benchmarks to select the most optimal algorithm in speed, space, and image quality, saving 95% space per image.'
         ],
         color: 'yellow',
       },

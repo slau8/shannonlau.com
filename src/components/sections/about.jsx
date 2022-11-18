@@ -7,7 +7,7 @@ class About extends Component {
     return (
       <Section title='about'>
         <p>
-          Hello! I’m Shannon, a creator who loves building things that intersect
+          Hello! I'm Shannon, a creator who's stoked to build things that intersect
           engineering and design. Most of my knowledge comes from the{' '}
           <a
             href='https://umich.edu/'
@@ -15,8 +15,7 @@ class About extends Component {
             target='_blank'
             rel='noopener noreferrer'>
             University of Michigan
-          </a>{' '}
-          where I'm exploring computer science and multidiscplinary design,{' '}
+          </a>,{' '}
           <a
             href='https://en.wikipedia.org/wiki/Stuyvesant_High_School'
             className='link-green'
@@ -24,7 +23,7 @@ class About extends Component {
             rel='noopener noreferrer'>
             Stuyvesant High School
           </a>
-          , learning from many incredible minds around me, and tons of googling. Recently, I
+          , learning from many incredible minds around me, and tons of googling. I've
           built experience-elevating features for{' '}
           <a
             href='https://www.capitalone.com/'
@@ -39,33 +38,33 @@ class About extends Component {
             target='_blank'
             rel='noopener noreferrer'>
             Microsoft
-          </a>'s new productivity app as a software engineering intern. Currently,
-          I'm interning with{' '}
+          </a>'s new productivity app as a software engineering intern. Recently,
+          I interned with{' '}
           <a href="https://tech.fb.com/codec-avatars-facebook-reality-labs/"
             className='link-blue'
             target='_blank'
             rel='noopener noreferrer'>
             Facebook Reality Labs
-          </a> working on the Codec Avatars Project.
+          </a> building the Codec Avatars Project.
         </p>{' '}
         <p>
-          I’m hyped about technology and hardware with functional design.
-          Cameras, speakers + headphones, electric skateboards — if it has a
-          power button, it's fair game. I enjoy building software that
-          interfaces and complements some of these tangible products.
+          I'm hyped about ubiquitous technology with functional design.
+          Cameras, headphones, smart devices, electric skateboards — if it turns on,
+          it's fair game. I enjoy building software that builds and reimagines these
+          tangible experiences.
         </p>{' '}
         <p>
-          When I’m not coding, I teach data structures and algorithms and
-          mentor student design teams. I take photos, make{' '}
+          On the analog side of life, I've taught data structures & algorithms and
+          mentored student design teams. I love playing in the water as a volunteer
+          at the Downtown Boathouse (
           <a
-            href='https://www.instagram.com/p/B_sb7D8lx5R/'
+            href='https://www.downtownboathouse.org/'
             className='link-green'
             target='_blank'
             rel='noopener noreferrer'>
-            videos
+            free kayaking for all!
           </a>
-          , and follow new apparel and footwear. As a player on Michigan
-          Flywheel, I design jersey kits and gear.
+          ).
         </p>
       </Section>
     );
