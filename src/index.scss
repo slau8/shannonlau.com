@@ -10,6 +10,16 @@
 }
 
 @font-face {
+  font-family: 'SF Pro Display Light';
+  src: local('SF Pro'), url('/fonts/SF-Pro/SFProDisplay-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: local('SF Pro'), url('/fonts/SF-Pro/SFProDisplay-Regular.ttf') format('truetype');
+}
+
+@font-face {
   font-family: 'SF Mono';
   src: local('SF Mono'), url('/fonts/SF-Mono/SFMono-Regular.ttf') format('truetype');
 }

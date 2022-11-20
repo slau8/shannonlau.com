@@ -56,7 +56,7 @@ class Projects extends Component {
           ))}
         </div>
         <p id='see-more'>
-          <a href='https://github.com/slau8' className='link-blue'>
+          <a href='https://github.com/slau8' target='_blank' className='link-blue'>
             Explore more on GitHub
           </a>
         </p>

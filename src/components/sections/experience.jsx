@@ -7,7 +7,7 @@ class Experience extends Component {
     active: 0,
     experiences: [
       {
-        company: 'Facebook',
+        company: 'Meta',
         url: 'https://tech.fb.com/codec-avatars-facebook-reality-labs/',
         title: 'Software Engineer Intern',
         start: 'August 2021',
@@ -70,12 +70,12 @@ class Experience extends Component {
         url: 'https://eecs.engin.umich.edu/',
         title: 'Teaching Assistant for EECS 281',
         start: 'August 2020',
-        end: 'Present',
+        end: 'May 2021',
         city: 'Ann Arbor',
         state: 'MI',
         details: [
-          'Help professors teach 900+ students by instructing lab class, answering online questions, writing and evaluating exams, and holding office hours to guide students one-on-one.',
-          'Deepen students’ understanding of best coding practices, debugging tools, and core concepts, including stacks, queues, trees, dynamic programming, and hash tables.',
+          'Helped professors teach 900+ students by instructing lab class, answering online questions, writing and evaluating exams, and holding office hours to guide students one-on-one.',
+          'Deepened students\' understanding of best coding practices, debugging tools, and core concepts, including stacks, queues, trees, dynamic programming, and hash tables.',
         ],
         color: 'yellow',
       },
