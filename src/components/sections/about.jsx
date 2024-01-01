@@ -26,31 +26,37 @@ class About extends Component {
           , learning from incredible minds around me, and tons of googling. I've
           built experience-elevating features for{' '}
           <a
-            href='https://www.capitalone.com/'
+            href='https://www.capitalone.com/software/blog/'
             className='link-yellow'
             target='_blank'
             rel='noopener noreferrer'>
             Capital One
           </a>
-          's voice applications and{' '}
-          <a href="https://www.microsoft.com"
+          's voice applications,{' '}
+          <a href="https://www.microsoft.com/en-us/microsoft-365/microsoft-lists"
             className='link-red'
             target='_blank'
             rel='noopener noreferrer'>
             Microsoft
-          </a>'s new productivity app. At Michigan, I taught data structures &
-          algorithms and mentored student design teams. Most recently, I interned with{' '}
+          </a>'s new productivity app, and the Codec Avatars Project at {' '}
           <a href="https://tech.fb.com/codec-avatars-facebook-reality-labs/"
             className='link-blue'
             target='_blank'
             rel='noopener noreferrer'>
-            Reality Labs at Meta
-          </a>, developing the Codec Avatars Project.
+            Meta Reality Labs
+          </a>. At Michigan, I taught data structures &
+          algorithms and mentored student design teams. Currently, I'm engineering safer, smarter, and connected streets with{' '}
+          <a href="https://www.michiganbusiness.org/reports-data/success-stories/cavnue-cav-corridor/"
+            className='link-green'
+            target='_blank'
+            rel='noopener noreferrer'>
+            Cavnue
+          </a>.
         </p>{' '}
         <p>
           I'm hyped about {' '}
           <a href="https://www.youtube.com/watch?v=b1w9_cob_zw"
-            className='link-green'
+            className='link-yellow'
             target='_blank'
             rel='noopener noreferrer'>
             ubiquitous technologies
@@ -64,7 +70,7 @@ class About extends Component {
           I love playing in the water as a volunteer at the Downtown Boathouse —{' '}
           <a
             href='https://www.downtownboathouse.org/'
-            className='link-yellow'
+            className='link-red'
             target='_blank'
             rel='noopener noreferrer'>
             free kayaking for all!
