@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {
+  IconMail,
   IconGitHub,
   IconInstagram,
   IconLinkedIn,
@@ -7,6 +8,10 @@ import {
 } from './../icons';
 
 const socialMedia = [
+  {
+    name: 'Email',
+    url: 'https://mail.google.com/mail/?view=cm&fs=1&to=shanlau@umich.edu',
+  },
   {
     name: 'GitHub',
     url: 'https://www.github.com/slau8',
@@ -45,6 +50,8 @@ class Icons extends Component {
 
   getIcon(name) {
     switch (name) {
+      case 'Email':
+        return <IconMail />;
       case 'GitHub':
         return <IconGitHub />;
       case 'Instagram':

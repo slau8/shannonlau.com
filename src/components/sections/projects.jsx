@@ -8,7 +8,7 @@ class Projects extends Component {
       {
         title: 'Touch Connect Four',
         detail:
-          'Multi-touch pad device that optically recognizes finger contours and tracks movements as different gestures for specific Connect Four moves on the built-in app.',
+          'Acrylic, multi-touch pad device that optically translates finger contours and movements into gestures for digital connect four with Python OpenCV. ',
         tags: ['Python', 'OpenCV', 'Soldering', 'Laser-Cutting'],
         img: 'touch-connect-four.png',
         color: 'blue',
@@ -18,7 +18,7 @@ class Projects extends Component {
       {
         title: 'UFO',
         detail:
-          'High-altitude device launched 26,822 meters into the stratosphere to measure and store pressure, temperature, humidity, UV index, and GPS data for weather analysis.',
+          'Custom-built printed circuit board payload launched 26,822 meters into the stratosphere to gather pressure, temperature, humidity, UV index, andGPS data for weather analysis. ',
         tags: ['C/C++', 'Arduino', 'Soldering', 'I2C', 'UART'],
         img: 'ufo.png',
         color: 'green',
@@ -56,7 +56,7 @@ class Projects extends Component {
           ))}
         </div>
         <p id='see-more'>
-          <a href='https://github.com/slau8' target='_blank' className='link-blue'>
+          <a href='https://github.com/slau8' target='_blank' rel="noopener noreferrer" className='link-blue'>
             Explore more on GitHub
           </a>
         </p>
