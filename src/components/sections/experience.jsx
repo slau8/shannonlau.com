@@ -15,10 +15,9 @@ class Experience extends Component {
         city: 'Detroit',
         state: 'MI',
         details: [
-          'Architect Python processing pipelines for maps, videos, vehicle kinematics, and other ecosystem artifacts, building a scalable and versatile digital twin of real road activity.',
-          'Develop simulation stack features in C++ to generate photorealistic traffic data.',
-          'Collaborate closely with algorithm engineers and platform architects to ensure cohesive processing and unified data interfaces across multiple, interwoven pipelines.',
-          'Conduct comprehensive in-vehicle road testing, performing diverse driving maneuvers and scenarios to troubleshoot platform software and support end-to-end validation.'
+          'Architect a multi-processing digital twin of real, multimodal roads by re-designing the C++ simulation engine and Python pipelines for videos, maps, vehicle kinematics, and other ecosystem artifacts — optimizing runtime performance up to 3.5x faster.',
+          'Collaborate closely with algorithm engineers and platform architects to design and align on unified Protobuf data formats across multiple, interwoven pipelines.',
+          'Conduct comprehensive live road testing by performing vehicle maneuvers and traffic scenarios, troubleshooting software bugs, and providing end-to-end validation.'
         ],
         color: 'green',
       },
@@ -90,8 +89,8 @@ class Experience extends Component {
         city: 'Ann Arbor',
         state: 'MI',
         details: [
-          'Helped professors teach 900+ students by instructing lab class, facilitating class forums, answering online questions, writing and evaluating exams, and holding office hours to guide students one-on-one.',
-          'Deepened students\' understanding of best coding practices, debugging tools, and core concepts, including stacks, queues, trees, dynamic programming, and hash tables.',
+          'Assisted in teaching 900+ students by instructing labs, facilitating class forums, designing exams, and holding office hours to guide students one-on-one. In C++. ',
+          'Deepened students\' understanding of best coding practices, debugging tools, and core concepts, including stacks, queues, graphs, dynamic programming, and hash tables.',
         ],
         color: 'yellow',
       },
@@ -123,7 +122,7 @@ class Experience extends Component {
         )}
         <p id='see-more'>
           <a href='/shannon-lau-resume.pdf' target='_blank' rel="noopener noreferrer" className='link-blue'>
-            See full resume
+            See full résumé
           </a>
         </p>
       </Section >
