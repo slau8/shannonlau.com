@@ -20,7 +20,7 @@ class Hero extends Component {
             <Fade duration={duration} delay={delay}>
               <h1 className='hero-text'>
                 I'm <span className='name'>Shannon Lau</span>, a
-                software engineer and creative technologist. Let's build
+                software engineer and multidisciplinary creator. Let's build
                 human-centered experiences, together.{' '}
                 <span className='accent-green'>NYC-bred.</span> ↓
               </h1>

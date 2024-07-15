@@ -61,9 +61,11 @@ class About extends Component {
             rel='noopener noreferrer'>
             ubiquitous technologies
           </a> with functional design.
-          Cameras, headphones, smart devices, electric skateboards — if it turns on,
-          it's fair game. My vision is to reimagine and expand these
-          tangible experiences.
+          I'm hyped about ubiquitous technologies with functional design.
+          Speech-to-text tools, cameras, headphones, smart devices, electric skateboards, and more —
+          I envision a future where our interactions with computers are subtle;
+          while they're the backbone of some of our daily systems,
+          our focus remains on our lived experience and the grounded reality of interacting with one another.
         </p>{' '}
         <p>
           On the analog side of life, I'm jamming on the cajon, urban hiking, and exploring new third places.
