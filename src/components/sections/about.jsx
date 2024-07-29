@@ -61,11 +61,10 @@ class About extends Component {
             rel='noopener noreferrer'>
             ubiquitous technologies
           </a> with functional design.
-          I'm hyped about ubiquitous technologies with functional design.
-          Speech-to-text tools, cameras, headphones, smart devices, electric skateboards, and more —
-          I envision a future where our interactions with computers are subtle;
-          while they're the backbone of some of our daily systems,
-          our focus remains on our lived experience and the grounded reality of interacting with one another.
+          Speech-to-text tools, cameras, headphones, fitness trackers, electric skateboards, and more —
+          I’m envisioning a future where these tools feel so intuitive in our daily flow,
+          that they almost fade into the background. Our focus remains grounded in the present,
+          on the beauty of our everyday, and in the spaces where we feel truly connected.
         </p>{' '}
         <p>
           On the analog side of life, I'm jamming on the cajon, urban hiking, and exploring new third places.
