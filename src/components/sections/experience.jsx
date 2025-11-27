@@ -11,13 +11,13 @@ class Experience extends Component {
         url: 'https://www.michiganbusiness.org/reports-data/success-stories/cavnue-cav-corridor/',
         title: 'Software Engineer',
         start: 'March 2023',
-        end: 'Present',
+        end: 'July 2025',
         city: 'Detroit',
         state: 'MI',
         details: [
-          'Architect a multi-processing digital twin of real, multimodal roads by re-designing the C++ simulation engine and Python pipelines for videos, maps, vehicle kinematics, and other ecosystem artifacts — optimizing runtime performance up to 3.5x faster.',
-          'Collaborate closely with algorithm engineers and platform architects to design and align on unified Protobuf data formats across multiple, interwoven pipelines.',
-          'Conduct comprehensive live road testing by performing vehicle maneuvers and traffic scenarios, troubleshooting software bugs, and providing end-to-end validation.'
+          'Architected a digital twin of real roads by re-designing the C++ simulation engine and Python multi-processing pipelines for videos, geospatial data, road user kinematics, and other ecosystem artifacts — optimizing runtime performance up to 12x faster.',
+          'Collaborated closely with software architects to design and build unified Protobuf and Pub/Sub schemas, connecting ETLs with the BigQuery data warehouse.',
+          'Validated end-to-end system and data integrity by conducting road testing, tracking data lineage, root-causing bugs, and engaging with data contributors.',
         ],
         color: 'green',
       },
@@ -30,8 +30,8 @@ class Experience extends Component {
         city: 'Pittsburgh',
         state: 'PA',
         details: [
-          'Implemented lossy compression algorithms in C++ to optimize 3D face and gaze capture, supporting VR telepresence for Reality Lab\'s Codec Avatars.',
-          'Developed Python-based benchmarks to quantitatively analyze algorithm differences in speed, space, and image quality, and integrated the most optimal into the pipeline.'
+          "Implemented lossy compression algorithms in C++ to optimize 3D face and gaze capture, supporting VR telepresence for Reality Lab's Codec Avatars.",
+          'Developed Python-based benchmarks to quantitatively analyze algorithm differences in speed, space, and image quality, and integrated the most optimal into the pipeline.',
         ],
         color: 'yellow',
       },
@@ -44,9 +44,9 @@ class Experience extends Component {
         city: 'Seattle',
         state: 'WA',
         details: [
-          'Pioneered the development and testing of Microsoft Lists\' inaugural front-end features for content editing and grouping, with React, Typescript, and Sass.',
+          "Pioneered the development and testing of Microsoft Lists' inaugural front-end features for content editing and grouping, with React, Typescript, and Sass.",
           'Identified and resolved telemetry bugs, while coordinating with feature owners and product managers, optimizing our median reliability rate to 99.9%.',
-          'Visualized in-depth app performance and resilience metrics using the company\'s internal data tooling to provide leadership with first-ever app insights.',
+          "Visualized in-depth app performance and resilience metrics using the company's internal data tooling to provide leadership with first-ever app insights.",
         ],
         color: 'red',
       },
@@ -74,8 +74,8 @@ class Experience extends Component {
         city: 'Chicago',
         state: 'IL',
         details: [
-          'Developed an AWS Lambda with Python that transforms 3,000+ daily customer calls into visualizable data for Sage, Capital One\'s call assessment platform.',
-          'Built and integrated experience-elevating features into Sage\'s audio player platform with AngularJS and D3.js, including: dual-speaker waveform visualization to distinguish the current speaker and to enhance audio-scrubbing, call captioning to improve audio retention, and issue-tagging to flag any timestamp for future reference.',
+          "Developed an AWS Lambda with Python that transforms 3,000+ daily customer calls into visualizable data for Sage, Capital One's call assessment platform.",
+          "Built and integrated experience-elevating features into Sage's audio player platform with AngularJS and D3.js, including: dual-speaker waveform visualization to distinguish the current speaker and to enhance audio-scrubbing, call captioning to improve audio retention, and issue-tagging to flag any timestamp for future reference.",
           'Interfaced with designers, product managers, and other developers in Agile sprints to ensure functional and thoughtful user experiences across our voice-based applications.',
         ],
         color: 'green',
@@ -90,7 +90,7 @@ class Experience extends Component {
         state: 'MI',
         details: [
           'Assisted in teaching 900+ students by instructing labs, facilitating class forums, designing exams, and holding office hours to guide students one-on-one. In C++. ',
-          'Deepened students\' understanding of best coding practices, debugging tools, and core concepts, including stacks, queues, graphs, dynamic programming, and hash tables.',
+          "Deepened students' understanding of best coding practices, debugging tools, and core concepts, including stacks, queues, graphs, dynamic programming, and hash tables.",
         ],
         color: 'yellow',
       },
@@ -116,16 +116,19 @@ class Experience extends Component {
             </React.Fragment>
           ))}
         </p> */}
-        {experiences.map(
-          (experience, index) =>
-            <Role experience={experience} key={index} />
-        )}
+        {experiences.map((experience, index) => (
+          <Role experience={experience} key={index} />
+        ))}
         <p id='see-more'>
-          <a href='/shannon-lau-resume.pdf' target='_blank' rel="noopener noreferrer" className='link-blue'>
+          <a
+            href='/shannon-lau-resume.pdf'
+            target='_blank'
+            rel='noopener noreferrer'
+            className='link-blue'>
             See full résumé
           </a>
         </p>
-      </Section >
+      </Section>
     );
   }
 }

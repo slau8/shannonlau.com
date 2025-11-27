@@ -7,15 +7,16 @@ class About extends Component {
     return (
       <Section title='about'>
         <p>
-          I'm Shannon, a creator building at the intersection of
-          engineering and design. Much of my knowledge comes from the{' '}
+          I'm Shannon, a creator building at the intersection of engineering and
+          design. Much of my knowledge comes from the{' '}
           <a
             href='https://www.mlive.com/news/ann-arbor/2022/11/more-chonky-squirrels-are-showing-up-everywhere-at-the-university-of-michigan.html'
             className='link-blue'
             target='_blank'
             rel='noopener noreferrer'>
             University of Michigan
-          </a>,{' '}
+          </a>
+          ,{' '}
           <a
             href='https://youtu.be/FWm79x7ZI0k?t=56'
             className='link-green'
@@ -33,27 +34,38 @@ class About extends Component {
             Capital One
           </a>
           's voice applications,{' '}
-          <a href="https://www.microsoft.com/en-us/microsoft-365/microsoft-lists"
+          <a
+            href='https://www.microsoft.com/en-us/microsoft-365/microsoft-lists'
             className='link-red'
             target='_blank'
             rel='noopener noreferrer'>
             Microsoft
-          </a>'s new productivity app, and the Codec Avatars Project at {' '}
-          <a href="https://tech.fb.com/codec-avatars-facebook-reality-labs/"
+          </a>
+          's new productivity app, and the Codec Avatars Project at{' '}
+          <a
+            href='https://tech.fb.com/codec-avatars-facebook-reality-labs/'
             className='link-blue'
             target='_blank'
             rel='noopener noreferrer'>
             Meta Reality Labs
-          </a>. At Michigan, I taught data structures &
-          algorithms and mentored student design teams. Currently, I'm engineering safer, smarter, and connected streets with{' '}
-          <a href="https://www.michiganbusiness.org/reports-data/success-stories/cavnue-cav-corridor/"
+          </a>
+          . At Michigan, I taught data structures & algorithms and mentored
+          student design teams
+        </p>
+        <p>
+          I recently worked on smart roads with{' '}
+          <a
+            href='https://www.michiganbusiness.org/reports-data/success-stories/cavnue-cav-corridor/'
             className='link-green'
             target='_blank'
             rel='noopener noreferrer'>
             Cavnue
-          </a>.
-        </p>{' '}
-        <p>
+          </a>
+          , but lately, my focus has shifted closer to home, advocating for
+          safer streets and equitable housing. My tools may evolve, but the goal
+          is the same: to make daily life more livable, more just, more whole.
+        </p>
+        {/* <p>
           I'm hyped about {' '}
           <a href="https://www.youtube.com/watch?v=b1w9_cob_zw"
             className='link-yellow'
@@ -65,17 +77,18 @@ class About extends Component {
           I’m envisioning a future where these tools feel so intuitive in our daily flow,
           that they almost fade into the background. Our focus remains grounded in the present,
           on the beauty of our everyday, and in the spaces where we feel truly connected.
-        </p>{' '}
+        </p>{' '} */}
         <p>
-          On the analog side of life, I'm jamming on the cajon, urban hiking, and exploring new third places.
-          I love playing in the water as a volunteer at the Downtown Boathouse —{' '}
+          On the analog side of life, I'm jamming on the cajon, urban hiking,
+          and exploring new third places. I enjoy workin' on bikes over at{' '}
           <a
-            href='https://www.downtownboathouse.org/'
-            className='link-red'
+            href='http://commoncycle.org/'
+            className='link-yellow'
             target='_blank'
             rel='noopener noreferrer'>
-            free kayaking for all!
+            Common Cycle
           </a>
+          .
         </p>
       </Section>
     );
