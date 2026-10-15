@@ -50,7 +50,7 @@ class About extends Component {
             Meta Reality Labs
           </a>
           . At Michigan, I taught data structures & algorithms and mentored
-          student design teams
+          student design teams.
         </p>
         <p>
           I recently worked on smart roads with{' '}
